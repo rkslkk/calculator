@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+
 // #include <ncurses.h>
 using namespace std;
 
@@ -24,7 +25,7 @@ int main() {
     
 
     if (mainMenu == 'a' || mainMenu == 'A') {
-        cout << "\n You have chosen Addition." << endl << endl;
+        cout << "\n You have chosen Additionh." << endl << endl;
         cout << "Please input two numbers to add together: " << endl;
         cin >> add1;
         cin >> add2;
@@ -37,7 +38,7 @@ int main() {
         cin >> subtract1;
         cin >> subtract2;
         double difference = (subtract1 - subtract2);
-        cout << "The difference is: " << sum << endl;
+        cout << "The difference is: " << difference << endl;
     }
     if (mainMenu == 'c' || mainMenu == 'C') {
         cout << "\n You have chosen Multiplication." << endl << endl;
@@ -50,6 +51,10 @@ int main() {
     }
     if (mainMenu == 'q' || mainMenu == 'Q') {
         cout << "\n You have chosen to quit the program. Goodbye." << endl;
+        exit(0);
+    }
+    else {
+        cout << "You did not choose a valid option.. Quiting program..." << endl;
         exit(0);
     }
     return 0;
