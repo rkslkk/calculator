@@ -9,6 +9,7 @@ int main() {
     char mainMenu = 'z';
     double add1, add2 = 0;
     double subtract1, subtract2 = 0;
+    double mult1, mult2 = 0;
 
     cout << "CALCULATOR PRACTICE PROGRAM" << endl << endl;
     cout << "Hello, and welcome to the Claculator Practice Program." << endl << endl;
@@ -42,6 +43,11 @@ int main() {
     }
     if (mainMenu == 'c' || mainMenu == 'C') {
         cout << "\n You have chosen Multiplication." << endl << endl;
+        cout << "Please enter two numbers to multiply: " << endl;
+        cin >> mult1;
+        cin >> mult2;
+        double quotient = (mult1 * mult2);
+        cout << "The quotient is: " << quotient << endl;
     }
     if (mainMenu == 'd' || mainMenu == 'D') {
         cout << "\n You have chosen division." << endl << endl;
@@ -51,10 +57,6 @@ int main() {
     }
     if (mainMenu == 'q' || mainMenu == 'Q') {
         cout << "\n You have chosen to quit the program. Goodbye." << endl;
-        exit(0);
-    }
-    else {
-        cout << "You did not choose a valid option.. Quiting program..." << endl;
         exit(0);
     }
     return 0;
