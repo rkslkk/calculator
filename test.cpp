@@ -10,6 +10,7 @@ int main() {
     double add1, add2 = 0;
     double subtract1, subtract2 = 0;
     double mult1, mult2 = 0;
+    double div1, div2 = 0;
 
     cout << "CALCULATOR PRACTICE PROGRAM" << endl << endl;
     cout << "Hello, and welcome to the Claculator Practice Program." << endl << endl;
@@ -46,11 +47,16 @@ int main() {
         cout << "Please enter two numbers to multiply: " << endl;
         cin >> mult1;
         cin >> mult2;
-        double quotient = (mult1 * mult2);
-        cout << "The quotient is: " << quotient << endl;
+        double product = (mult1 * mult2);
+        cout << "The product is: " << product << endl;
     }
     if (mainMenu == 'd' || mainMenu == 'D') {
         cout << "\n You have chosen division." << endl << endl;
+        cout << "Please enter two numbers to divide: " << endl;
+        cin >> div1;
+        cin >> div2;
+        double quotient = (div1/div2);
+        cout << "The quotient is: " << quotient << endl;
     }
     if (mainMenu == 'e' || mainMenu == 'E') {
         cout << "\n You have chosen Powers & Roots." << endl << endl;
