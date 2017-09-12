@@ -6,8 +6,8 @@ using namespace std;
 int main() {
 
     char mainMenu = 'z';
-    float add1, add2 = 0;
-    float sum = (add1 + add2);
+    double add1, add2 = 0;
+    double subtract1, subtract2 = 0;
 
     cout << "CALCULATOR PRACTICE PROGRAM" << endl << endl;
     cout << "Hello, and welcome to the Claculator Practice Program." << endl << endl;
@@ -28,10 +28,16 @@ int main() {
         cout << "Please input two numbers to add together: " << endl;
         cin >> add1;
         cin >> add2;
+        double sum = (add1 + add2);
         cout << "The sum is: " << sum << endl;
     };
     if (mainMenu == 'b' || mainMenu == 'B') {
         cout << "\n You have chosen Subtraction." << endl << endl;
+        cout << "Please input two numbers to subtract: " << endl;
+        cin >> subtract1;
+        cin >> subtract2;
+        double difference = (subtract1 - subtract2);
+        cout << "The difference is: " << sum << endl;
     }
     if (mainMenu == 'c' || mainMenu == 'C') {
         cout << "\n You have chosen Multiplication." << endl << endl;
